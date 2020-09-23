@@ -1,0 +1,51 @@
+\section{Radial orbital density plots}
+The radial orbital density plots are created by integrating over angular portion of the norm of the single particle wavefunction.
+
+\begin{equation}
+    \bar{\psi}^2(r) = \int_0^{2\pi}\int_0^{\pi} \psi^2(r,\theta,\phi) r^2 \sin(\theta) dr d\theta d\phi
+\end{equation}
+
+Discretizing this expression using a uniform radial grid and a Lebedev-Laikov quadrature for the angular components, yields a form that can be readily evaluated.
+
+\begin{equation}\label{eq:plotted}
+    \bar{\psi}^2(r_i) = 4 \pi {r_i^2}  \sum_j^{N^{ang}} w^{ang}_j \psi^2(r_i,\theta_j,\phi_j) 
+\end{equation}
+
+The function $\bar{\psi}^2(r_i)$ from equation~\ref{eq:plotted} is used for plotting, with the points $r_i$ serving as the abscissa.
+Since the singly occupied orbitals are normalized, the sum of the radial quadrature of this function is also checked to be close to unity.
+
+\begin{equation}\label{eq:norm}
+    \sum_i^{N^{rad}} \bar{\psi}^2(r_i) w^{rad}_i = \sum_i^{N^{rad}} \bar{\psi}^2(r_i) {\Delta}r \approx  1
+\end{equation}
+
+\subsection{Dependency versions}
+\begin{table}[]
+\begin{tabular}{ll}
+dependency      & version     \\
+\texttt{numpy}  & 1.18.4      \\
+\texttt{quadpy} & 0.16.2      \\
+\texttt{pyscf}  & 1.7.0       \\
+\texttt{cclib}  & 1.6.3       \\
+\end{tabular}   
+\end{table}
+
+
+\subsection{Step 1: Generating a Molden file}
+Molden files were generated using \texttt{cclib}. 
+The only exception is the natural orbital from the CIPSI calculations. 
+Since QuantumPackage is not supported by \texttt{cclib}, molden files were created using the native utility in QuantumPackage 2.0. 
+The \texttt{-g/--ghost} flag indicates the presence of a ghost atom.
+The \texttt{-n/--naturalorbtials} was created to allow natural orbitals to be written instead of molecular orbitals.
+This flag is not yet availible in the official distribution, but a request to incorporate it in the official distribution has been opened (\url{https://github.com/cclib/cclib/pull/948}).
+
+%\lstinputlisting[label=cclibmoldenbasic,caption=Using \texttt{cclib} to write a Molden file from an output file. ,language={bash}]{parts/cclibmolden.sh}
+\inputminted{zsh}{parts/cclibmolden.sh}
+
+\subsection{Step 2: Integrating over the angular components of the singly occupied orbital}
+
+Quadpy was used to generate the Lebedev-Laikov integration weights and points.
+The singly occupied molecular/natural orbital was was evaluated at these points using PySCF.
+
+%\lstinputlisting[label=anionradialint,caption=Using \texttt{Quadpy} and \texttt{PySCF} to integrate the singly occupied orbital. ,language={Python}]{parts/anionradialint.py}
+\inputminted{python}{parts/anionradialint.py}
+

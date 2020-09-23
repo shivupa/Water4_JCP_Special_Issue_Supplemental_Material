@@ -2,7 +2,7 @@ LATEX=pdflatex
 LATEXOPT=--shell-escape
 
 LATEXMK=latexmk
-LATEXMKOPT=-pdf
+LATEXMKOPT=-pdf -shell-escape
 
 MAIN=si
 BIB=si
