@@ -1,0 +1,126 @@
+#################################################################################
+#                              MATPLOTLIB RC FILE                               #
+#                                 SHIV UPADHYAY                                 #
+#################################################################################
+         #############################################################         
+         #                          Backend                          #         
+         #############################################################         
+         #                           LINES                           #         
+         #############################################################         
+         lines.linewidth               :                           1.0
+         lines.linestyle               :                             -         
+         lines.antialiased             :                          True         
+         #############################################################         
+         #                          PATCHES                          #         
+         #############################################################         
+         patch.antialiased             :                          True         
+         #############################################################         
+         #                           FONT                            #         
+         #############################################################         
+         font.family                   :                         serif         
+         font.style                    :                        normal         
+         font.variant                  :                        normal         
+         font.weight                   :                        medium         
+         font.stretch                  :                        normal         
+         font.size                     :                            10         
+         #############################################################         
+         #                           TEXT                            #         
+         #############################################################         
+         text.color                    :                         black         
+         text.antialiased              :                          True         
+         mathtext.fontset              :                            cm         
+         mathtext.rm                   :                         serif         
+         #############################################################         
+         #                           AXES                            #         
+         #############################################################         
+         axes.facecolor                :                         white         
+         axes.edgecolor                :                         black         
+         axes.linewidth                :                          1.25         
+         axes.grid                     :                          True         
+         axes.labelcolor               :                         black         
+         axes.axisbelow                :                          True         
+         axes.formatter.useoffset      :                         False         
+         axes.spines.left              :                          True         
+         axes.spines.bottom            :                          True         
+         axes.spines.top               :                          True         
+         axes.spines.right             :                          True         
+         axes.unicode_minus            :                          True         
+axes.prop_cycle               : cycler('color', ['darkorchid', 'dodgerblue', '00933C', 'FCCB09', 'darkorange', 'EE352E'])
+         polaraxes.grid                :                          True         
+         axes3d.grid                   :                          True         
+         #############################################################         
+         #                           TICKS                           #         
+         #############################################################         
+         xtick.top                     :                          True         
+         xtick.bottom                  :                          True         
+         xtick.major.size              :                           7.0         
+         xtick.minor.size              :                           3.0         
+         xtick.major.width             :                           0.5         
+         xtick.minor.width             :                           0.5         
+         xtick.color                   :                             k         
+         xtick.labelsize               :                        medium         
+         xtick.direction               :                            in         
+         xtick.minor.visible           :                          True         
+         xtick.major.top               :                          True         
+         xtick.major.bottom            :                          True         
+         xtick.minor.top               :                          True         
+         xtick.minor.bottom            :                          True         
+         ytick.left                    :                          True         
+         ytick.right                   :                          True         
+         ytick.major.size              :                           7.0         
+         ytick.minor.size              :                           3.0         
+         ytick.major.width             :                           0.5         
+         ytick.minor.width             :                           0.5         
+         ytick.color                   :                             k         
+         ytick.labelsize               :                        medium         
+         ytick.direction               :                            in         
+         ytick.minor.visible           :                          True         
+         #############################################################         
+         #                           GRIDS                           #         
+         #############################################################         
+         grid.color                    :                         black         
+         grid.linestyle                :                             :         
+         grid.linewidth                :                           0.5         
+         grid.alpha                    :                           1.0         
+         #############################################################         
+         #                          LEGEND                           #         
+         #############################################################         
+         legend.loc                    :                          best         
+         legend.frameon                :                          True         
+         legend.framealpha             :                           1.0         
+         legend.facecolor              :                       inherit         
+         legend.edgecolor              :                       inherit         
+         legend.fancybox               :                          True         
+         legend.fontsize               :                         small         
+         #############################################################         
+         #                          FIGURE                           #         
+         #############################################################         
+         figure.figsize                :                      3.3, 3.3         
+         figure.dpi                    :                           100         
+         figure.facecolor              :                         white         
+         figure.edgecolor              :                         white         
+         #############################################################         
+         #                          IMAGES                           #         
+         #############################################################         
+         image.cmap                    :                       viridis         
+         image.origin                  :                         upper         
+         image.resample                :                          True         
+         #############################################################         
+         #                       CONTOUR PLOTS                       #         
+         #############################################################         
+         contour.negative_linestyle    :                        dashed         
+         #############################################################         
+         #                      ERRORBAR PLOTS                       #         
+         #############################################################         
+         errorbar.capsize              :                            10         
+         #############################################################         
+         #                      HISTOGRAM PLOTS                      #         
+         #############################################################         
+         hist.bins                     :                          auto         
+         #############################################################         
+         #                       SCATTER PLOTS                       #         
+         #############################################################         
+         scatter.marker                :                             o         
+#################################################################################
+#         Written                       :              2019-12-11 11:48         #
+#################################################################################
