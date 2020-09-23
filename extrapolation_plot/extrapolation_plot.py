@@ -61,10 +61,13 @@ for job in glob.glob("../data/*"):
     plot_title = plot_title.replace("shiv", "/")
     plot_title = plot_title.replace("upa", "(")
     plot_title = plot_title.replace("Napu", "N)")
-    plot_title = plot_title.replace("Aapu", "A)\n")
+    plot_title = plot_title.replace("Aapu", "A)")
     plot_title = plot_title.replace("p0", ".0")
     trialwfn = plot_title.split("__")[0]
     basis = plot_title.split("__")[1]
+    basis = basis.replace('vdz','VDZ')
+    basis = basis.replace('vtz','VTZ')
+
     separation = plot_title.split("__")[2]
 
     trialwfn = trialwfn.replace("_", " ")
@@ -77,9 +80,9 @@ for job in glob.glob("../data/*"):
     else:
         neutral_trialwfn = trialwfn
         anion_trialwfn = trialwfn
-    neutral_title = "{} {} {} neutral".format(neutral_trialwfn, basis, separation)
-    anion_title = "{} {} {} anion".format(anion_trialwfn, basis, separation)
-    combined_title = "{} {} {} EBE".format(trialwfn, basis, separation)
+    neutral_title = "{}\n{} R = {} neutral".format(neutral_trialwfn, basis, separation)
+    anion_title = "{}\n{} R = {} anion".format(anion_trialwfn, basis, separation)
+    combined_title = "{}\n{} R = {} EBE".format(trialwfn, basis, separation)
 
     filename = job.split("/")[-1]
     filename = os.path.splitext(filename)[0]
