@@ -12,6 +12,8 @@
 *.cb2
 .*.lb
 
+si_doc/compile
+
 ## Intermediate documents:
 *.dvi
 *.xdv
