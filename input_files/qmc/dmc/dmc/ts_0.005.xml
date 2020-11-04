@@ -1,4 +1,5 @@
-  <!--Name and Series number of the project.-->
+<simulation>
+ <!--Name and Series number of the project.-->
   <project id="h2o4" series="0"/>
   <!--Link to the location of the Atomic Coordinates and the location of the Wavefunction.-->
   <include href="qmc_h2o4.structure.xml"/>
