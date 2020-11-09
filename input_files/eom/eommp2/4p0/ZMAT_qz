@@ -1,0 +1,65 @@
+water4
+GH   0.000000    0.000000    0.000000
+O    0.000000    1.730527    2.893437
+H    0.000000    1.387569    2.000001
+H    0.000000    2.681413    2.785434
+O    0.000000   -1.730527    2.893437
+H    0.000000   -1.387569    2.000001
+H    0.000000   -2.681413    2.785434
+O    0.000000    1.730527   -2.893437
+H    0.000000    1.387569   -2.000001
+H    0.000000    2.681413   -2.785434
+O    0.000000   -1.730527   -2.893437
+H    0.000000   -1.387569   -2.000001
+H    0.000000   -2.681413   -2.785434
+
+*CFOUR(CALC=MP2
+SCF_DAMP=500,SCF_MAXCYC=300
+BASIS=SPECIAL
+FROZEN_CORE=ON
+MEMORY=500,MEM_UNIT=GB
+REFERENCE=RHF
+ESTATE_SYM=1/0/0/0/0/0/0/0
+CC_CONV=8
+CC_MAXCYC=100
+NEWNORM=1
+XFORM_TOL=13
+LINEQ_CONV=10
+GUESS=CORE
+SYM_CHECK=0
+SPHERICAL=ON
+COORD=CARTESIAN                                                                                                              
+EXCITE=EOMEA
+CHARGE=0,MULTIPLICITY=1)
+
+GH:3S1P
+O:aug-cc-pVQZ
+H:aug-cc-pVQZ
+H:aug-cc-pVQZ
+O:aug-cc-pVQZ
+H:aug-cc-pVQZ
+H:aug-cc-pVQZ
+O:aug-cc-pVQZ
+H:aug-cc-pVQZ
+H:aug-cc-pVQZ
+O:aug-cc-pVQZ
+H:aug-cc-pVQZ
+H:aug-cc-pVQZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
