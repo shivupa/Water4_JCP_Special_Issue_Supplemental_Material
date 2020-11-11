@@ -1,1 +1,1 @@
-EOM Calculations done with CFOUR V2
+EOM Calculations done with CFOUR v2
