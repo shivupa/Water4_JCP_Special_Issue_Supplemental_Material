@@ -1,0 +1,39 @@
+<jastrow name="J2" type="Two-Body" function="Bspline" print="yes">
+      <correlation rcut="10" size="10" speciesA="u" speciesB="u">
+        <coefficients id="uu" type="Array"> 0.4237484736 0.2629961355 0.1695037445 0.1088512855 0.06180000575 0.04196986888 0.02918354541 0.01987811107 0.01189027348 0.006089826954</coefficients>
+      </correlation>
+      <correlation rcut="10" size="10" speciesA="u" speciesB="d">
+        <coefficients id="ud" type="Array"> 0.6671307669 0.3585813833 0.2213200731 0.1639996824 0.09823926896 0.06022919762 0.04237183566 0.02865530864 0.01645399089 0.007599705008</coefficients>
+      </correlation>
+    </jastrow>
+    <jastrow name="J1" type="One-Body" function="Bspline" source="ion0" print="yes">
+      <correlation rcut="10" size="10" cusp="0" elementType="X">
+        <coefficients id="eX" type="Array"> 0.09517528825 0.1230011328 0.08290580702 0.07916284201 0.05189653865 0.04984875355 0.01867828781 0.03038941618 -0.01191244555 -0.02791630352</coefficients>
+      </correlation>
+      <correlation rcut="10" size="10" cusp="0" elementType="O">
+        <coefficients id="eO" type="Array"> -2.304091196 -1.991463627 -0.9878190317 -0.6387018629 -0.4068111278 -0.2310240031 -0.1389635681 -0.1030980173 -0.07418344165 -0.0491444427</coefficients>
+      </correlation>
+      <correlation rcut="10" size="10" cusp="0" elementType="H">
+        <coefficients id="eH" type="Array"> -0.2881559923 -0.1624247413 -0.1504528393 -0.1335645313 -0.1146879086 -0.09991084204 -0.07783877138 -0.05213344563 -0.02326239806 0.0100803272</coefficients>
+      </correlation>
+    </jastrow>
+    <jastrow name="J3" type="eeI" function="polynomial" source="ion0" print="yes">
+      <correlation ispecies="X" especies="u" isize="3" esize="3" rcut="5">
+        <coefficients id="uuX" type="Array" optimize="yes"> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</coefficients>
+      </correlation>
+      <correlation ispecies="X" especies1="u" especies2="d" isize="3" esize="3" rcut="5">
+        <coefficients id="udX" type="Array" optimize="yes"> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</coefficients>
+      </correlation>
+      <correlation ispecies="O" especies="u" isize="3" esize="3" rcut="5">
+        <coefficients id="uuO" type="Array" optimize="yes"> 0.0009033504819 0.0006109570501 0.005758378868 -0.003076150176 -0.005377151204 0.0006643908904 -0.00165514492 0.005864920481 0.02489981618 0.0002865109478 -0.002437788318 -0.02198821603 -0.01443052575 0.007023654532 0.01467927852 -9.23423296e-05 0.002121017943 0.007546696985 0.03612026482 0.004096154706 -0.00875319391 -0.01726749071 0.003237829622 0.00837368927 0.005486735918 -0.002198075093</coefficients>
+      </correlation>
+      <correlation ispecies="O" especies1="u" especies2="d" isize="3" esize="3" rcut="5">
+        <coefficients id="udO" type="Array" optimize="yes"> -0.007335259008 0.002341134448 0.03019327 0.003630329309 -0.005775655182 0.0004604573913 0.01870921463 -0.002140329987 0.04439165601 -0.006577753504 0.007055385038 -0.04321844228 -0.01820456446 -0.002937355729 0.01086430771 0.001540258705 0.02064764855 -0.02394595384 0.06360001922 0.002898790848 -0.007953977688 -0.01644008172 0.002067330578 0.006775246301 0.003842646655 -0.001376849974</coefficients>
+      </correlation>
+      <correlation ispecies="H" especies="u" isize="3" esize="3" rcut="5">
+        <coefficients id="uuH" type="Array" optimize="yes"> 0.0003385070351 0.01423680875 0.009054825442 -0.01479842075 -0.01612611983 -0.001256783733 0.03862279243 -0.03682233802 0.02833524676 -0.02358454852 -0.02654042389 0.05040791069 -0.03064515948 0.03782347853 0.01724094739 0.002072480427 0.0150604102 0.09343581383 -0.1219482617 0.04762636306 -0.02569266677 0.02407143436 -0.01183751324 0.01160243195 -0.009848171211 0.004235731797</coefficients>
+      </correlation>
+      <correlation ispecies="H" especies1="u" especies2="d" isize="3" esize="3" rcut="5">
+        <coefficients id="udH" type="Array" optimize="yes"> -0.001306639908 0.004605569009 0.008251081809 -0.008856990228 -0.01236045504 0.0001954714827 0.01753792373 -0.01862524663 0.02299675765 -0.009476256623 -0.01645104314 0.02936348579 -0.02415776077 0.02125932299 0.01354757056 0.001917601425 0.01126975917 0.06074338102 -0.08758595266 0.03763129309 -0.01923407261 0.02181884132 -0.01080253953 0.01017107362 -0.01094718296 0.004626895554</coefficients>
+      </correlation>
+    </jastrow>
